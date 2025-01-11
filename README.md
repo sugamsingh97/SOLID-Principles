@@ -498,13 +498,13 @@ namespace DIP
 - The code demonstrates loose coupling - we can easily swap logging implementations
 - There's one DIP violation in the Add() method that should be fixed by using the injected logger
 
-### To fix the DIP violation in the Add() method, replace:
+#### To fix the DIP violation in the Add() method, replace:
 ```csharp
 FileLogger fg = new FileLogger();
 fg.LogError(ex.Message);
 ```
 
-with:
+#### with:
 
 ```csharp
 logger.LogError(ex.Message);
