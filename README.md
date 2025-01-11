@@ -148,10 +148,10 @@
 ```csharp
 FileLogger fg = new FileLogger();
 fg.LogError(ex.Message);
-'''
+```
 
 with:
 
-'''csharp
+```csharp
 logger.LogError(ex.Message);
-'''
+```
